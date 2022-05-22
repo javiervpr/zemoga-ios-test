@@ -45,7 +45,6 @@
 		8572EE0F2836E607002894FB /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572EE0E2836E607002894FB /* SpinnerView.swift */; };
 		8579694528357D3A00515EC4 /* CoreDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579694428357D3A00515EC4 /* CoreDataModels.swift */; };
 		857C97BE28392F5900D6FEC6 /* PostDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C97BD28392F5900D6FEC6 /* PostDetailViewControllerTests.swift */; };
-		85802493283A8AAC00B79A9D /* NetworkSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */; };
 		85B53EF628397B6F007A8A12 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EEF28397B6F007A8A12 /* DMSans-Regular.ttf */; };
 		85B53EF728397B6F007A8A12 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF028397B6F007A8A12 /* DMSans-Medium.ttf */; };
 		85B53EF828397B6F007A8A12 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF128397B6F007A8A12 /* DMSans-Bold.ttf */; };
@@ -115,7 +114,6 @@
 		8572EE0E2836E607002894FB /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		8579694428357D3A00515EC4 /* CoreDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModels.swift; sourceTree = "<group>"; };
 		857C97BD28392F5900D6FEC6 /* PostDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewControllerTests.swift; sourceTree = "<group>"; };
-		85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTests.swift; sourceTree = "<group>"; };
 		85B53EEF28397B6F007A8A12 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
 		85B53EF028397B6F007A8A12 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
 		85B53EF128397B6F007A8A12 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 		853FB2352833D7700027A5DB /* ZemogaMobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				85802491283A8A9400B79A9D /* HttpConfig */,
 				856C116E2838AF0E0054E51C /* ViewControllers */,
 				856C1160283837AE0054E51C /* Services */,
 				856C11562837F7AC0054E51C /* SetUp */,
@@ -342,14 +339,6 @@
 				856C11542837C1750054E51C /* ViewController+Components.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		85802491283A8A9400B79A9D /* HttpConfig */ = {
-			isa = PBXGroup;
-			children = (
-				85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */,
-			);
-			path = HttpConfig;
 			sourceTree = "<group>";
 		};
 		85B53EED28397B26007A8A12 /* Fonts */ = {
@@ -551,7 +540,6 @@
 				856C11702838AF2D0054E51C /* PostsViewControllerTests.swift in Sources */,
 				856C115F28382BAD0054E51C /* MockPersistantContainer.swift in Sources */,
 				853FB2372833D7700027A5DB /* UserServiceTests.swift in Sources */,
-				85802493283A8AAC00B79A9D /* NetworkSessionTests.swift in Sources */,
 				856C1164283872990054E51C /* CommentServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

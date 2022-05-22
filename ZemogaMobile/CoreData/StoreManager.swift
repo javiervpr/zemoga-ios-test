@@ -13,7 +13,6 @@ class StoreManager {
 
     init(container: NSPersistentContainer) {
         self.persistentContainer = container
-//        self.persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
     }
 
     convenience init() {

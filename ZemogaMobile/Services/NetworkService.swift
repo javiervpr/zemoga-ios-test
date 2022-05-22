@@ -42,8 +42,8 @@ class NetworkService {
                     
                     do {
                         if response.statusCode == 200  {
-                            let respuestaSerializada = try JSONDecoder().decode(R.self, from: data)
-                            onSuccess(respuestaSerializada)
+                            let responseDecode = try JSONDecoder().decode(R.self, from: data)
+                            onSuccess(responseDecode)
                         } else {
                             onError(Constants.HTTP_ERROR)
                         }

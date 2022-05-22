@@ -8,20 +8,6 @@
 import CoreData
 
 class MockPersistantContainer {
- 
-    /**
-     lazy var persistentContainer: NSPersistentContainer = {
-         let container = NSPersistentContainer(name: "ZemogaMobile")
-         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-             if let error = error as NSError? {
-                  application, although it may be useful during development.
-                 fatalError("Unresolved error \(error), \(error.userInfo)")
-             }
-         })
-         return container
-     }()
-     
-     */
     
     lazy var managedObjectModel: NSManagedObjectModel = {
         let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle(for: type(of: self))] )!
@@ -33,7 +19,7 @@ class MockPersistantContainer {
         let container = NSPersistentContainer(name: "ZemogaMobile")
         let description = NSPersistentStoreDescription()
         description.type = NSInMemoryStoreType
-        description.shouldAddStoreAsynchronously = false // Make it simpler in test env
+        description.shouldAddStoreAsynchronously = false
         
         container.persistentStoreDescriptions = [description]
         container.loadPersistentStores { (description, error) in
