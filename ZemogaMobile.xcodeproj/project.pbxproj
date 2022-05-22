@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		853FB21D2833D76C0027A5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB21C2833D76C0027A5DB /* AppDelegate.swift */; };
+		853FB21F2833D76C0027A5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB21E2833D76C0027A5DB /* SceneDelegate.swift */; };
+		853FB2242833D76C0027A5DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853FB2222833D76C0027A5DB /* Main.storyboard */; };
+		853FB2272833D76C0027A5DB /* ZemogaMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 853FB2252833D76C0027A5DB /* ZemogaMobile.xcdatamodeld */; };
+		853FB2292833D76F0027A5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853FB2282833D76F0027A5DB /* Assets.xcassets */; };
+		853FB22C2833D76F0027A5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853FB22A2833D76F0027A5DB /* LaunchScreen.storyboard */; };
+		853FB2372833D7700027A5DB /* UserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB2362833D7700027A5DB /* UserServiceTests.swift */; };
+		853FB2412833D7700027A5DB /* ZemogaMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB2402833D7700027A5DB /* ZemogaMobileUITests.swift */; };
+		853FB2432833D7700027A5DB /* ZemogaMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB2422833D7700027A5DB /* ZemogaMobileUITestsLaunchTests.swift */; };
+		853FB252283404430027A5DB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB251283404430027A5DB /* NetworkService.swift */; };
+		853FB2552834108E0027A5DB /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB2542834108E0027A5DB /* PostsViewController.swift */; };
+		853FB259283412C40027A5DB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB258283412C40027A5DB /* PostCell.swift */; };
+		853FB25B283436600027A5DB /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB25A283436600027A5DB /* PostService.swift */; };
+		853FB25D283436D40027A5DB /* PostDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB25C283436D40027A5DB /* PostDto.swift */; };
+		853FB25F283436E00027A5DB /* UserDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB25E283436E00027A5DB /* UserDto.swift */; };
+		853FB261283436ED0027A5DB /* CommentDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB260283436ED0027A5DB /* CommentDto.swift */; };
+		853FB26428343CC10027A5DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB26328343CC10027A5DB /* Constants.swift */; };
+		853FB26728348E5F0027A5DB /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB26628348E5F0027A5DB /* PostDetailViewController.swift */; };
+		853FB26928348FCF0027A5DB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853FB26828348FCF0027A5DB /* CommentCell.swift */; };
+		856C114C2837BD2C0054E51C /* PostViewController+FetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C114B2837BD2C0054E51C /* PostViewController+FetchDelegate.swift */; };
+		856C114E2837BD8D0054E51C /* PostViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C114D2837BD8D0054E51C /* PostViewController+TableViewDelegate.swift */; };
+		856C11512837BE3F0054E51C /* PostDetailViewController+FetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C11502837BE3F0054E51C /* PostDetailViewController+FetchDelegate.swift */; };
+		856C11532837BEB50054E51C /* PostDetailViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C11522837BEB50054E51C /* PostDetailViewController+TableViewDelegate.swift */; };
+		856C11552837C1750054E51C /* ViewController+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C11542837C1750054E51C /* ViewController+Components.swift */; };
+		856C1159283816DC0054E51C /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C1158283816DC0054E51C /* StoreManager.swift */; };
+		856C115B283817CB0054E51C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C115A283817CB0054E51C /* UserService.swift */; };
+		856C115D28381CDB0054E51C /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C115C28381CDB0054E51C /* CommentService.swift */; };
+		856C115F28382BAD0054E51C /* MockPersistantContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C115E28382BAD0054E51C /* MockPersistantContainer.swift */; };
+		856C1162283843030054E51C /* PostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C1161283843030054E51C /* PostServiceTests.swift */; };
+		856C1164283872990054E51C /* CommentServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C1163283872990054E51C /* CommentServiceTests.swift */; };
+		856C1166283883DB0054E51C /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C1165283883DB0054E51C /* NetworkServiceTests.swift */; };
+		856C1169283890690054E51C /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C1168283890690054E51C /* NetworkSession.swift */; };
+		856C116B2838923D0054E51C /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C116A2838923D0054E51C /* MockNetworkSession.swift */; };
+		856C116D283892D70054E51C /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 856C116C283892D70054E51C /* posts.json */; };
+		856C11702838AF2D0054E51C /* PostsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856C116F2838AF2D0054E51C /* PostsViewControllerTests.swift */; };
+		8572EE0F2836E607002894FB /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572EE0E2836E607002894FB /* SpinnerView.swift */; };
+		8579694528357D3A00515EC4 /* CoreDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8579694428357D3A00515EC4 /* CoreDataModels.swift */; };
+		857C97BE28392F5900D6FEC6 /* PostDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C97BD28392F5900D6FEC6 /* PostDetailViewControllerTests.swift */; };
+		85802493283A8AAC00B79A9D /* NetworkSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */; };
+		85B53EF628397B6F007A8A12 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EEF28397B6F007A8A12 /* DMSans-Regular.ttf */; };
+		85B53EF728397B6F007A8A12 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF028397B6F007A8A12 /* DMSans-Medium.ttf */; };
+		85B53EF828397B6F007A8A12 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF128397B6F007A8A12 /* DMSans-Bold.ttf */; };
+		85B53EF928397B6F007A8A12 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF228397B6F007A8A12 /* DMSans-BoldItalic.ttf */; };
+		85B53EFA28397B6F007A8A12 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF328397B6F007A8A12 /* OFL.txt */; };
+		85B53EFB28397B6F007A8A12 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF428397B6F007A8A12 /* DMSans-MediumItalic.ttf */; };
+		85B53EFC28397B6F007A8A12 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85B53EF528397B6F007A8A12 /* DMSans-Italic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		853FB2332833D7700027A5DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 853FB2112833D76C0027A5DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 853FB2182833D76C0027A5DB;
+			remoteInfo = ZemogaMobile;
+		};
+		853FB23D2833D7700027A5DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 853FB2112833D76C0027A5DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 853FB2182833D76C0027A5DB;
+			remoteInfo = ZemogaMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		853FB2192833D76C0027A5DB /* ZemogaMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZemogaMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		853FB21C2833D76C0027A5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		853FB21E2833D76C0027A5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		853FB2232833D76C0027A5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		853FB2262833D76C0027A5DB /* ZemogaMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZemogaMobile.xcdatamodel; sourceTree = "<group>"; };
+		853FB2282833D76F0027A5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		853FB22B2833D76F0027A5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		853FB22D2833D76F0027A5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		853FB2322833D7700027A5DB /* ZemogaMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		853FB2362833D7700027A5DB /* UserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTests.swift; sourceTree = "<group>"; };
+		853FB23C2833D7700027A5DB /* ZemogaMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZemogaMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		853FB2402833D7700027A5DB /* ZemogaMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaMobileUITests.swift; sourceTree = "<group>"; };
+		853FB2422833D7700027A5DB /* ZemogaMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZemogaMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		853FB251283404430027A5DB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		853FB2542834108E0027A5DB /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		853FB258283412C40027A5DB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		853FB25A283436600027A5DB /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		853FB25C283436D40027A5DB /* PostDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDto.swift; sourceTree = "<group>"; };
+		853FB25E283436E00027A5DB /* UserDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDto.swift; sourceTree = "<group>"; };
+		853FB260283436ED0027A5DB /* CommentDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDto.swift; sourceTree = "<group>"; };
+		853FB26328343CC10027A5DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		853FB26628348E5F0027A5DB /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		853FB26828348FCF0027A5DB /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		856C114B2837BD2C0054E51C /* PostViewController+FetchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+FetchDelegate.swift"; sourceTree = "<group>"; };
+		856C114D2837BD8D0054E51C /* PostViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		856C11502837BE3F0054E51C /* PostDetailViewController+FetchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailViewController+FetchDelegate.swift"; sourceTree = "<group>"; };
+		856C11522837BEB50054E51C /* PostDetailViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		856C11542837C1750054E51C /* ViewController+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Components.swift"; sourceTree = "<group>"; };
+		856C1158283816DC0054E51C /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		856C115A283817CB0054E51C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		856C115C28381CDB0054E51C /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentService.swift; path = ../../../../../CommentService.swift; sourceTree = "<group>"; };
+		856C115E28382BAD0054E51C /* MockPersistantContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistantContainer.swift; sourceTree = "<group>"; };
+		856C1161283843030054E51C /* PostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTests.swift; sourceTree = "<group>"; };
+		856C1163283872990054E51C /* CommentServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentServiceTests.swift; sourceTree = "<group>"; };
+		856C1165283883DB0054E51C /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		856C1168283890690054E51C /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		856C116A2838923D0054E51C /* MockNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
+		856C116C283892D70054E51C /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		856C116F2838AF2D0054E51C /* PostsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewControllerTests.swift; sourceTree = "<group>"; };
+		8572EE0E2836E607002894FB /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		8579694428357D3A00515EC4 /* CoreDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModels.swift; sourceTree = "<group>"; };
+		857C97BD28392F5900D6FEC6 /* PostDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTests.swift; sourceTree = "<group>"; };
+		85B53EEF28397B6F007A8A12 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		85B53EF028397B6F007A8A12 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		85B53EF128397B6F007A8A12 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		85B53EF228397B6F007A8A12 /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		85B53EF328397B6F007A8A12 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		85B53EF428397B6F007A8A12 /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		85B53EF528397B6F007A8A12 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		853FB2162833D76C0027A5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB22F2833D7700027A5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB2392833D7700027A5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		853FB2102833D76C0027A5DB = {
+			isa = PBXGroup;
+			children = (
+				853FB21B2833D76C0027A5DB /* ZemogaMobile */,
+				853FB2352833D7700027A5DB /* ZemogaMobileTests */,
+				853FB23F2833D7700027A5DB /* ZemogaMobileUITests */,
+				853FB21A2833D76C0027A5DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		853FB21A2833D76C0027A5DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				853FB2192833D76C0027A5DB /* ZemogaMobile.app */,
+				853FB2322833D7700027A5DB /* ZemogaMobileTests.xctest */,
+				853FB23C2833D7700027A5DB /* ZemogaMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		853FB21B2833D76C0027A5DB /* ZemogaMobile */ = {
+			isa = PBXGroup;
+			children = (
+				85B53EED28397B26007A8A12 /* Fonts */,
+				856C1167283890380054E51C /* HttpConfig */,
+				856C1157283816B40054E51C /* CoreData */,
+				853FB26228343CB30027A5DB /* Utils */,
+				8572EE0D2836E5CB002894FB /* Components */,
+				853FB253283410000027A5DB /* ViewControllers */,
+				853FB250283404150027A5DB /* Services */,
+				853FB24F2834040A0027A5DB /* Models */,
+				853FB21C2833D76C0027A5DB /* AppDelegate.swift */,
+				853FB21E2833D76C0027A5DB /* SceneDelegate.swift */,
+				853FB2222833D76C0027A5DB /* Main.storyboard */,
+				853FB2282833D76F0027A5DB /* Assets.xcassets */,
+				853FB22A2833D76F0027A5DB /* LaunchScreen.storyboard */,
+				853FB22D2833D76F0027A5DB /* Info.plist */,
+				853FB2252833D76C0027A5DB /* ZemogaMobile.xcdatamodeld */,
+			);
+			path = ZemogaMobile;
+			sourceTree = "<group>";
+		};
+		853FB2352833D7700027A5DB /* ZemogaMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				85802491283A8A9400B79A9D /* HttpConfig */,
+				856C116E2838AF0E0054E51C /* ViewControllers */,
+				856C1160283837AE0054E51C /* Services */,
+				856C11562837F7AC0054E51C /* SetUp */,
+			);
+			path = ZemogaMobileTests;
+			sourceTree = "<group>";
+		};
+		853FB23F2833D7700027A5DB /* ZemogaMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				853FB2402833D7700027A5DB /* ZemogaMobileUITests.swift */,
+				853FB2422833D7700027A5DB /* ZemogaMobileUITestsLaunchTests.swift */,
+			);
+			path = ZemogaMobileUITests;
+			sourceTree = "<group>";
+		};
+		853FB24F2834040A0027A5DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				853FB25C283436D40027A5DB /* PostDto.swift */,
+				853FB25E283436E00027A5DB /* UserDto.swift */,
+				853FB260283436ED0027A5DB /* CommentDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		853FB250283404150027A5DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				853FB251283404430027A5DB /* NetworkService.swift */,
+				853FB25A283436600027A5DB /* PostService.swift */,
+				856C115A283817CB0054E51C /* UserService.swift */,
+				856C115C28381CDB0054E51C /* CommentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		853FB253283410000027A5DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				853FB26528348E170027A5DB /* PostDetail */,
+				853FB2562834128B0027A5DB /* Posts */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		853FB2562834128B0027A5DB /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				853FB257283412A30027A5DB /* PostCell */,
+				853FB2542834108E0027A5DB /* PostsViewController.swift */,
+				856C114B2837BD2C0054E51C /* PostViewController+FetchDelegate.swift */,
+				856C114D2837BD8D0054E51C /* PostViewController+TableViewDelegate.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		853FB257283412A30027A5DB /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				853FB258283412C40027A5DB /* PostCell.swift */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		853FB26228343CB30027A5DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				853FB26328343CC10027A5DB /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		853FB26528348E170027A5DB /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				856C114F2837BE010054E51C /* CommentCell */,
+				853FB26628348E5F0027A5DB /* PostDetailViewController.swift */,
+				856C11502837BE3F0054E51C /* PostDetailViewController+FetchDelegate.swift */,
+				856C11522837BEB50054E51C /* PostDetailViewController+TableViewDelegate.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		856C114F2837BE010054E51C /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				853FB26828348FCF0027A5DB /* CommentCell.swift */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		856C11562837F7AC0054E51C /* SetUp */ = {
+			isa = PBXGroup;
+			children = (
+				856C115E28382BAD0054E51C /* MockPersistantContainer.swift */,
+				856C116A2838923D0054E51C /* MockNetworkSession.swift */,
+				856C116C283892D70054E51C /* posts.json */,
+			);
+			path = SetUp;
+			sourceTree = "<group>";
+		};
+		856C1157283816B40054E51C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8579694428357D3A00515EC4 /* CoreDataModels.swift */,
+				856C1158283816DC0054E51C /* StoreManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		856C1160283837AE0054E51C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				853FB2362833D7700027A5DB /* UserServiceTests.swift */,
+				856C1161283843030054E51C /* PostServiceTests.swift */,
+				856C1163283872990054E51C /* CommentServiceTests.swift */,
+				856C1165283883DB0054E51C /* NetworkServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		856C1167283890380054E51C /* HttpConfig */ = {
+			isa = PBXGroup;
+			children = (
+				856C1168283890690054E51C /* NetworkSession.swift */,
+			);
+			path = HttpConfig;
+			sourceTree = "<group>";
+		};
+		856C116E2838AF0E0054E51C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				856C116F2838AF2D0054E51C /* PostsViewControllerTests.swift */,
+				857C97BD28392F5900D6FEC6 /* PostDetailViewControllerTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8572EE0D2836E5CB002894FB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8572EE0E2836E607002894FB /* SpinnerView.swift */,
+				856C11542837C1750054E51C /* ViewController+Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		85802491283A8A9400B79A9D /* HttpConfig */ = {
+			isa = PBXGroup;
+			children = (
+				85802492283A8AAC00B79A9D /* NetworkSessionTests.swift */,
+			);
+			path = HttpConfig;
+			sourceTree = "<group>";
+		};
+		85B53EED28397B26007A8A12 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				85B53EEE28397B6F007A8A12 /* DM_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		85B53EEE28397B6F007A8A12 /* DM_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				85B53EEF28397B6F007A8A12 /* DMSans-Regular.ttf */,
+				85B53EF028397B6F007A8A12 /* DMSans-Medium.ttf */,
+				85B53EF128397B6F007A8A12 /* DMSans-Bold.ttf */,
+				85B53EF228397B6F007A8A12 /* DMSans-BoldItalic.ttf */,
+				85B53EF328397B6F007A8A12 /* OFL.txt */,
+				85B53EF428397B6F007A8A12 /* DMSans-MediumItalic.ttf */,
+				85B53EF528397B6F007A8A12 /* DMSans-Italic.ttf */,
+			);
+			path = DM_Sans;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		853FB2182833D76C0027A5DB /* ZemogaMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853FB2462833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobile" */;
+			buildPhases = (
+				853FB2152833D76C0027A5DB /* Sources */,
+				853FB2162833D76C0027A5DB /* Frameworks */,
+				853FB2172833D76C0027A5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZemogaMobile;
+			productName = ZemogaMobile;
+			productReference = 853FB2192833D76C0027A5DB /* ZemogaMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		853FB2312833D7700027A5DB /* ZemogaMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853FB2492833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobileTests" */;
+			buildPhases = (
+				853FB22E2833D7700027A5DB /* Sources */,
+				853FB22F2833D7700027A5DB /* Frameworks */,
+				853FB2302833D7700027A5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				853FB2342833D7700027A5DB /* PBXTargetDependency */,
+			);
+			name = ZemogaMobileTests;
+			productName = ZemogaMobileTests;
+			productReference = 853FB2322833D7700027A5DB /* ZemogaMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		853FB23B2833D7700027A5DB /* ZemogaMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 853FB24C2833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobileUITests" */;
+			buildPhases = (
+				853FB2382833D7700027A5DB /* Sources */,
+				853FB2392833D7700027A5DB /* Frameworks */,
+				853FB23A2833D7700027A5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				853FB23E2833D7700027A5DB /* PBXTargetDependency */,
+			);
+			name = ZemogaMobileUITests;
+			productName = ZemogaMobileUITests;
+			productReference = 853FB23C2833D7700027A5DB /* ZemogaMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		853FB2112833D76C0027A5DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					853FB2182833D76C0027A5DB = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					853FB2312833D7700027A5DB = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 853FB2182833D76C0027A5DB;
+					};
+					853FB23B2833D7700027A5DB = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 853FB2182833D76C0027A5DB;
+					};
+				};
+			};
+			buildConfigurationList = 853FB2142833D76C0027A5DB /* Build configuration list for PBXProject "ZemogaMobile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 853FB2102833D76C0027A5DB;
+			productRefGroup = 853FB21A2833D76C0027A5DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				853FB2182833D76C0027A5DB /* ZemogaMobile */,
+				853FB2312833D7700027A5DB /* ZemogaMobileTests */,
+				853FB23B2833D7700027A5DB /* ZemogaMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		853FB2172833D76C0027A5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B53EF728397B6F007A8A12 /* DMSans-Medium.ttf in Resources */,
+				85B53EF828397B6F007A8A12 /* DMSans-Bold.ttf in Resources */,
+				85B53EFC28397B6F007A8A12 /* DMSans-Italic.ttf in Resources */,
+				85B53EF928397B6F007A8A12 /* DMSans-BoldItalic.ttf in Resources */,
+				85B53EFB28397B6F007A8A12 /* DMSans-MediumItalic.ttf in Resources */,
+				853FB22C2833D76F0027A5DB /* LaunchScreen.storyboard in Resources */,
+				853FB2292833D76F0027A5DB /* Assets.xcassets in Resources */,
+				853FB2242833D76C0027A5DB /* Main.storyboard in Resources */,
+				85B53EFA28397B6F007A8A12 /* OFL.txt in Resources */,
+				85B53EF628397B6F007A8A12 /* DMSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB2302833D7700027A5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856C116D283892D70054E51C /* posts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB23A2833D7700027A5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		853FB2152833D76C0027A5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856C11552837C1750054E51C /* ViewController+Components.swift in Sources */,
+				853FB259283412C40027A5DB /* PostCell.swift in Sources */,
+				853FB2552834108E0027A5DB /* PostsViewController.swift in Sources */,
+				856C1159283816DC0054E51C /* StoreManager.swift in Sources */,
+				8579694528357D3A00515EC4 /* CoreDataModels.swift in Sources */,
+				853FB252283404430027A5DB /* NetworkService.swift in Sources */,
+				856C11532837BEB50054E51C /* PostDetailViewController+TableViewDelegate.swift in Sources */,
+				856C115B283817CB0054E51C /* UserService.swift in Sources */,
+				853FB25B283436600027A5DB /* PostService.swift in Sources */,
+				853FB26728348E5F0027A5DB /* PostDetailViewController.swift in Sources */,
+				8572EE0F2836E607002894FB /* SpinnerView.swift in Sources */,
+				856C114E2837BD8D0054E51C /* PostViewController+TableViewDelegate.swift in Sources */,
+				856C114C2837BD2C0054E51C /* PostViewController+FetchDelegate.swift in Sources */,
+				853FB2272833D76C0027A5DB /* ZemogaMobile.xcdatamodeld in Sources */,
+				853FB25D283436D40027A5DB /* PostDto.swift in Sources */,
+				853FB21D2833D76C0027A5DB /* AppDelegate.swift in Sources */,
+				856C11512837BE3F0054E51C /* PostDetailViewController+FetchDelegate.swift in Sources */,
+				853FB25F283436E00027A5DB /* UserDto.swift in Sources */,
+				856C115D28381CDB0054E51C /* CommentService.swift in Sources */,
+				853FB261283436ED0027A5DB /* CommentDto.swift in Sources */,
+				853FB21F2833D76C0027A5DB /* SceneDelegate.swift in Sources */,
+				856C1169283890690054E51C /* NetworkSession.swift in Sources */,
+				853FB26428343CC10027A5DB /* Constants.swift in Sources */,
+				853FB26928348FCF0027A5DB /* CommentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB22E2833D7700027A5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856C1166283883DB0054E51C /* NetworkServiceTests.swift in Sources */,
+				857C97BE28392F5900D6FEC6 /* PostDetailViewControllerTests.swift in Sources */,
+				856C116B2838923D0054E51C /* MockNetworkSession.swift in Sources */,
+				856C1162283843030054E51C /* PostServiceTests.swift in Sources */,
+				856C11702838AF2D0054E51C /* PostsViewControllerTests.swift in Sources */,
+				856C115F28382BAD0054E51C /* MockPersistantContainer.swift in Sources */,
+				853FB2372833D7700027A5DB /* UserServiceTests.swift in Sources */,
+				85802493283A8AAC00B79A9D /* NetworkSessionTests.swift in Sources */,
+				856C1164283872990054E51C /* CommentServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		853FB2382833D7700027A5DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853FB2412833D7700027A5DB /* ZemogaMobileUITests.swift in Sources */,
+				853FB2432833D7700027A5DB /* ZemogaMobileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		853FB2342833D7700027A5DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 853FB2182833D76C0027A5DB /* ZemogaMobile */;
+			targetProxy = 853FB2332833D7700027A5DB /* PBXContainerItemProxy */;
+		};
+		853FB23E2833D7700027A5DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 853FB2182833D76C0027A5DB /* ZemogaMobile */;
+			targetProxy = 853FB23D2833D7700027A5DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		853FB2222833D76C0027A5DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				853FB2232833D76C0027A5DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		853FB22A2833D76F0027A5DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				853FB22B2833D76F0027A5DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		853FB2442833D7700027A5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		853FB2452833D7700027A5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		853FB2472833D7700027A5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F28F7NA24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZemogaMobile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		853FB2482833D7700027A5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F28F7NA24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZemogaMobile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		853FB24A2833D7700027A5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaMobile.app/ZemogaMobile";
+			};
+			name = Debug;
+		};
+		853FB24B2833D7700027A5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZemogaMobile.app/ZemogaMobile";
+			};
+			name = Release;
+		};
+		853FB24D2833D7700027A5DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZemogaMobile;
+			};
+			name = Debug;
+		};
+		853FB24E2833D7700027A5DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.javier.zemoga.mobile.ZemogaMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZemogaMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		853FB2142833D76C0027A5DB /* Build configuration list for PBXProject "ZemogaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853FB2442833D7700027A5DB /* Debug */,
+				853FB2452833D7700027A5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853FB2462833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853FB2472833D7700027A5DB /* Debug */,
+				853FB2482833D7700027A5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853FB2492833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853FB24A2833D7700027A5DB /* Debug */,
+				853FB24B2833D7700027A5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		853FB24C2833D7700027A5DB /* Build configuration list for PBXNativeTarget "ZemogaMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				853FB24D2833D7700027A5DB /* Debug */,
+				853FB24E2833D7700027A5DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		853FB2252833D76C0027A5DB /* ZemogaMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				853FB2262833D76C0027A5DB /* ZemogaMobile.xcdatamodel */,
+			);
+			currentVersion = 853FB2262833D76C0027A5DB /* ZemogaMobile.xcdatamodel */;
+			path = ZemogaMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 853FB2112833D76C0027A5DB /* Project object */;
+}

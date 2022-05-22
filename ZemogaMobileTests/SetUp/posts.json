@@ -1,0 +1,32 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quasrerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 5,
+    "id": 50,
+    "title": "repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem",
+    "body": "error suscipit maxime adipisci consequuntur recusandae\nvoluptas eligendi et est et voluptates\nquia et vitae\nadipisci impedit sequi nesciunt quis consectetur"
+  },
+  {
+    "userId": 6,
+    "id": 51,
+    "title": "soluta aliquam aperiam consequatur illo quis voluptas",
+    "body": "sunt dolores aut doloribus\ndolore doloribus voluptates"
+  },
+  {
+    "userId": 9,
+    "id": 90,
+    "title": "ad iusto omnis odit dolor voluptatibus",
+    "body": "minus omnis soluta quia\nqui sed adipisci voluptates illum ipsam voluptatem\neligendi officia ut in\neos"
+  },
+  {
+    "userId": 10,
+    "id": 100,
+    "title": "at nam consequatur ea labore ea harum",
+    "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam"
+  }
+]

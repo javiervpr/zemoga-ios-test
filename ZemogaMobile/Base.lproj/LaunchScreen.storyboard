@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Regular.ttf">
+            <string>DMSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zemoga logo" translatesAutoresizingMaskIntoConstraints="NO" id="AF1-3s-O11">
+                                <rect key="frame" x="94" y="399" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AF1-3s-O11" secondAttribute="height" multiplier="15:8" id="0HP-Hy-CqC"/>
+                                    <constraint firstAttribute="height" constant="128" id="cBe-9f-qza"/>
+                                    <constraint firstAttribute="width" constant="240" id="eSH-Xs-jdv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-jY-h6r">
+                                <rect key="frame" x="153.66666666666666" y="505" width="120.99999999999997" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="WPy-dp-Q26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DMSans-Regular" family="DM Sans" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AF1-3s-O11" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4zj-qE-L6e"/>
+                            <constraint firstItem="lsE-jY-h6r" firstAttribute="top" secondItem="AF1-3s-O11" secondAttribute="bottom" constant="-22" id="6JZ-gO-FWq"/>
+                            <constraint firstItem="AF1-3s-O11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QuS-Mw-pyM"/>
+                            <constraint firstItem="lsE-jY-h6r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fw5-bc-oRv"/>
+                            <constraint firstItem="AF1-3s-O11" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wFt-el-ZvG"/>
+                            <constraint firstItem="AF1-3s-O11" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zEv-le-ThU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zemoga logo" width="732" height="226"/>
+    </resources>
+</document>
