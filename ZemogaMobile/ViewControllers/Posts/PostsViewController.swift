@@ -24,7 +24,7 @@ class PostsViewController: UIViewController {
         postService = PostService(storeManager: storeManager)
         
         self.postTableView.addSubview(refreshControl)
-        refreshControl.addTarget(self, action: #selector(refreshWeatherData(_:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(refreshPostData(_:)), for: .valueChanged)
 
         
         self.setupFetchController()
@@ -71,7 +71,7 @@ class PostsViewController: UIViewController {
         self.postTableView.reloadData()
     }
     
-    @objc private func refreshWeatherData(_ sender: Any) {
+    @objc private func refreshPostData(_ sender: Any) {
         deletePosts()
         self.getPostFromHttp()
     }

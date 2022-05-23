@@ -34,11 +34,5 @@ class ZemogaMobileUITests: XCTestCase {
         application.buttons.staticTexts["Delete all"].tap()
         XCTAssertEqual(application.tables.firstMatch.cells.count, 0)
     }
-    
-    func testSegmentFilterFavorite() {
-        application.segmentedControls.firstMatch.buttons.element(boundBy: 1).tap()
-        debugPrint(application.segmentedControls.firstMatch.label)
-        
-    }
 
 }

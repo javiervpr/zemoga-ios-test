@@ -22,11 +22,8 @@ class NetworkServiceTests: XCTestCase {
     }
 
     func testHttpRequest() throws {
-        debugPrint("test http")
         let expect = expectation(description: "fetch posts")
         self.networkService.makeAGet(url: Constants.POST_ENDPOINT, enableLoading: true) { (posts: [PostDto]) in
-            debugPrint("POSTSSSS TEST")
-            debugPrint(posts)
             XCTAssertNotNil(posts)
             XCTAssertEqual(posts.count, 5)
             XCTAssertEqual(posts.last?.id, 100)
