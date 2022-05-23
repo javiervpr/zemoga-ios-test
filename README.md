@@ -30,7 +30,7 @@ We also have separate classes for creating UI components that can be used in dif
 ### Testing
 Unit tests were implemented to verify the functionalities. Additionally a few UI tests were added.
 
-**Covergae**
+**Coverage**
 
 <img width="898" alt="Coverage" src="https://user-images.githubusercontent.com/35070041/169828479-a710f996-6f82-4c06-87f2-403175ac06ef.png">
 
