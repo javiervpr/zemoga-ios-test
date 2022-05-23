@@ -107,8 +107,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hzQ-PL-wr5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8eY-Fq-aAp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzQ-PL-wr5" secondAttribute="trailing" constant="10" id="GrU-ZO-iAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzQ-PL-wr5" secondAttribute="trailing" constant="10" id="6FB-Mt-i6I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X3F-Zp-1sc" secondAttribute="trailing" constant="10" id="Mqy-Xc-29w"/>
                             <constraint firstItem="zgA-Q1-8ea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="O18-B5-pix"/>
                             <constraint firstItem="X3F-Zp-1sc" firstAttribute="top" secondItem="hzQ-PL-wr5" secondAttribute="bottom" constant="10" id="PRx-mu-TQ1"/>
@@ -117,6 +116,7 @@
                             <constraint firstItem="zgA-Q1-8ea" firstAttribute="top" secondItem="X3F-Zp-1sc" secondAttribute="bottom" constant="10" id="f1d-4b-nqt"/>
                             <constraint firstItem="hzQ-PL-wr5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7X-8n-awg"/>
                             <constraint firstItem="hzQ-PL-wr5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="tqx-11-lri"/>
+                            <constraint firstItem="hzQ-PL-wr5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uoe-0S-0HL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zgA-Q1-8ea" secondAttribute="bottom" constant="10" id="vwu-ko-zn4"/>
                         </constraints>
                     </view>
