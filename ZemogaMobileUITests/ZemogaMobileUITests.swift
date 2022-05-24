@@ -31,7 +31,7 @@ class ZemogaMobileUITests: XCTestCase {
     }
     
     func testDeleteAllPost() {
-        application.buttons.staticTexts["Delete all"].tap()
+        application.buttons.staticTexts["Delete All"].tap()
         XCTAssertEqual(application.tables.firstMatch.cells.count, 0)
     }
 
